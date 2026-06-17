@@ -22,3 +22,49 @@ Step 5: Version Control & Documentation
   ├─ Initialize Git repository
   ├─ Document your code and setup
   └─ Track your progress
+
+Perfect! Now we're getting somewhere. Let me create a clear roadmap for you.
+
+**Your Current Status:**
+- ✅ OctoPrint running on Raspberry Pi 3B
+- ✅ USB webcam connected to Pi
+- ✅ Local network access confirmed (can see server from computer)
+- ❌ Ender 3 not yet connected to Pi
+- 🎯 Need: Access from Windows PC + Galaxy S23 Ultra
+
+**Your Next Steps (In Order):**
+
+## Phase 1: Connect Printer to Pi (This Week)
+1. **Get a USB cable** - Micro USB from Ender 3 to Raspberry Pi
+2. **Connect it** - Plug the printer USB into the Pi
+3. **Test it in OctoPrint** - Settings → Printer → Connection
+4. **Verify** - You should see printer temperature readings at `http://192.168.2.201`
+
+## Phase 2: Remote Access Setup (Next)
+**Option A: Simple (Easiest for you)**
+- Use **OctoPrint's built-in cloud** (MyOctoPrint.com account)
+- Access from phone/PC instantly without configuration
+
+**Option B: Advanced (More control)**
+- Set up a reverse proxy or port forwarding
+- Access through your own domain
+
+**For now, I'd recommend Option A** since you're new to this.
+
+## Phase 3: Documentation & Git (Then)
+Once everything works locally, we'll:
+1. Set up Git on Windows
+2. Create a project folder
+3. Document your setup with a README
+4. Track any scripts/configs you create
+
+---
+
+**Right now, let's focus on Phase 1:**
+
+Can you confirm:
+1. **Do you have a USB cable** to connect the Ender 3 to the Pi? (It's usually a standard USB-A to USB-B cable, but Ender 3 uses USB-B Mini)
+2. **Is the Pi powered on** and OctoPrint accessible now at `http://192.168.2.201`?
+3. **What does the OctoPrint temp graph show?** (Should show bed/nozzle temps even without printer connected)
+
+Once you confirm these, I'll walk you through connecting the printer step-by-step!
